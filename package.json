@@ -1,0 +1,11 @@
+{
+  "name": "soroban-token-launchpad",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build:contracts": "cargo build --target wasm32-unknown-unknown --release",
+    "test:contracts": "cargo test",
+    "typegen": "soroban contract bindings typescript --output frontend/src/lib/contracts"
+  }
+}

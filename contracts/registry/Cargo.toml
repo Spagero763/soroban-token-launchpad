@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "contracts/token_factory",
+    "contracts/token_template",
+    "contracts/registry",
+]
+resolver = "2"
+
+[workspace.dependencies]
+soroban-sdk = { version = "21.0.0", features = ["testutils"] }
